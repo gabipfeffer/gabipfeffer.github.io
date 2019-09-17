@@ -1,3 +1,22 @@
-
 @import 'reset.css';
 
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#container {
+    background: #ccc;
+    flex-direction: column;
+    /* padding: 1rem 1.25rem; */
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    padding: 1rem 1.25rem;
+}
