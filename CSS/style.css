@@ -1,6 +1,7 @@
 @import 'reset.css';
 
 * {
+    text-decoration: none;
     box-sizing: border-box;
     font-size: 16px;
 }
@@ -8,15 +9,51 @@
 #container {
     background: #ccc;
     flex-direction: column;
-    /* padding: 1rem 1.25rem; */
+    /*padding: 1rem 1.25rem; */
     width: 100%;
+    display: flex;
 }
 
 .header {
     display: flex;
     flex-direction: column;
+    height: 72px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header__title,
+.header__subtitle {
+    margin: 0 0 0.5rem;
+}
+
+
+.header__menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__menu a {
+    color: #444;
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition: font-size .5s ease;
+}
+
+.header__menu a:hover {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.menu__btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: 1px solid black;
+    padding: .5rem;
 }
 
 div {
-    padding: 1rem 1.25rem;
+    padding: .75rem 1rem;
 }
+
