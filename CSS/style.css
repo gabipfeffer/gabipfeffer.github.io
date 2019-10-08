@@ -17,9 +17,14 @@
 .header {
     display: flex;
     flex-direction: column;
-    height: 72px;
+    height: 80px;
     overflow: hidden;
     position: relative;
+    transition: height .3s ease;
+}
+
+.header.header--expand {
+    height: 110px;
 }
 
 .header__title,
@@ -31,6 +36,11 @@
 .header__menu {
     display: flex;
     justify-content: space-evenly;
+    opacity: 0;
+    transition: opacity .5s ease .1s;
+}
+.header__menu.header__menu--opacity {
+    opacity: 1;
 }
 
 .header__menu a {
@@ -38,6 +48,7 @@
     font-size: 1.2rem;
     font-weight: 900;
     transition: font-size .5s ease;
+    padding: .5rem;
 }
 
 .header__menu a:hover {
@@ -51,9 +62,20 @@
     top: 1rem;
     border: 1px solid black;
     padding: .5rem;
+    cursor: pointer;
 }
 
 div {
-    padding: .75rem 1rem;
+    padding: 1rem;
 }
 
+.figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+ .figure > .figure__img {
+     width: 50%;
+     margin: 0 auto;
+ }
