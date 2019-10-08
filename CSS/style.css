@@ -1,81 +1,106 @@
 @import 'reset.css';
 
-* {
+*{
+    margin: 0;
     text-decoration: none;
-    box-sizing: border-box;
-    font-size: 16px;
+    scroll-behavior: smooth;
 }
-
-#container {
-    background: #ccc;
-    flex-direction: column;
-    /*padding: 1rem 1.25rem; */
-    width: 100%;
-    display: flex;
+ 
+html {
 }
-
-.header {
-    display: flex;
-    flex-direction: column;
-    height: 80px;
+ 
+#home{
+    background-color: salmon;
+    height: 100vh;
+}
+ 
+#tecnologia{
+    background-color: khaki;
+    height: 100vh;
+}
+ 
+#contacto{
+    background-color:sandybrown;
+    height: 100vh;
+}
+ 
+header{
+    background-color: #ccc;
+    padding: 30px;
+    height: 4.2rem;
     overflow: hidden;
     position: relative;
-    transition: height .3s ease;
+    transition: height .4s ease;
 }
-
-.header.header--expand {
-    height: 110px;
+.headerAmpliado{
+    background-color: #ccc;
+    padding: 30px;
+    height: 6.5rem;
+    overflow: hidden;
+    position: relative;
+ 
 }
-
-.header__title,
-.header__subtitle {
-    margin: 0 0 0.5rem;
+.header__titulo{
+    margin: 0 0 1rem;
 }
-
-
-.header__menu {
+.header__subtitulo{
+    margin: 0 0 1rem;
+}
+.header__nav{
     display: flex;
     justify-content: space-evenly;
-    opacity: 0;
-    transition: opacity .5s ease .1s;
 }
-.header__menu.header__menu--opacity {
-    opacity: 1;
-}
-
-.header__menu a {
+.header__nav a{
     color: #444;
     font-size: 1.2rem;
     font-weight: 900;
-    transition: font-size .5s ease;
-    padding: .5rem;
+    transition: font-size .2s ease;
 }
-
-.header__menu a:hover {
-    color: #fff;
-    font-size: 1.3rem;
-}
-
-.menu__btn {
+ 
+.nav__btn {
     position: absolute;
     right: 1rem;
-    top: 1rem;
-    border: 1px solid black;
+    top:1rem;
+    border:1px solid black;
     padding: .5rem;
-    cursor: pointer;
+    
+ 
 }
-
-div {
-    padding: 1rem;
+ 
+.header__nav a:hover{
+    color: white;
+    font-size:1.3rem;
 }
-
-.figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+ 
+.perfil__figure{
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
 }
- .figure > .figure__img {
-     width: 50%;
-     margin: 0 auto;
- }
+ 
+.perfil__figure figcaption{
+    text-align: center;
+    opacity: 0;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 80px;
+    font-size: 2rem;
+    position: absolute;
+    top: calc(75% - 40px);
+    transition: opacity .5s ease;
+}
+ 
+.perfil__figure:hover figcaption{
+    opacity: 1;
+    background-color: rgb(37, 37, 121);
+    color: white;
+    left:0;
+    width: 400px;
+    height: 300px;
+ 
+}
+ 
+.perfil__figure img{
+    width: 100%;
+    height: auto;
+}

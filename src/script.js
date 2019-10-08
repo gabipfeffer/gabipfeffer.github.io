@@ -1,10 +1,9 @@
+var botonMenu = document.querySelector('.nav__btn');
+var mostrarMenu=document.querySelector('header');
 
-document.querySelector('.menu__btn')
-    .addEventListener('click', () => {
-    const header = document.querySelector('.header');
-    const headerMenu = document.querySelector('.header__menu');
-
-    header.classList.toggle('header--expand');
-    headerMenu.classList.toggle('header__menu--opacity');
-
+botonMenu.addEventListener('click', function(){
+    mostrarMenu.classList.toggle('headerAmpliado');
 });
+ botonMenu.addEventListener('click', function(event){
+     console.log(event);
+ })
