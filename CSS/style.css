@@ -36,6 +36,7 @@
     text-transform: uppercase;
     line-height: 3rem;
     padding: 0 1rem;
+    cursor: pointer;
 }
 
 .navbar > a {
@@ -73,6 +74,7 @@ button.about {
     border-radius: 5%;
     background-color: #252934;
     color: ivory;
+    cursor: pointer;
 }
 
 .fixed-nav {
