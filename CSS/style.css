@@ -7,6 +7,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 
 .navbar {
@@ -70,11 +71,15 @@ header > h2 {
 button.about {
     margin: 1rem 0;
     padding: 1rem 1rem;
-    border: 3px solid white;
+    border: 3px solid ivory;
     border-radius: 5%;
     background-color: #252934;
     color: ivory;
     cursor: pointer;
+}
+
+.about > a {
+    color: ivory;
 }
 
 .fixed-nav {
@@ -82,17 +87,94 @@ button.about {
     box-shadow: 0 5px rgba(0, 0, 0, 0.1);
 }
 
-#educacion {
-    height: 100vh;
+#sobremi {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.sobremi_figure {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80%;
+}
+
+.sobremi_figure > img {
+    width: 100%;
+    height: auto;
+}
+
+.sobremi_desc {
+    padding: 0.5rem 0 0 0;
+    width: 90%;
+    text-align: center;
+    margin: 0px;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+section > h2 {
+    padding: 2rem 0 0 0.2rem;
+    font-weight: 350;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#educacion {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table_educacion {
+
+}
+
+.table_educacion td {
+    padding: 2rem 0;
+    width: 50%;
+}
+
+.table_educacion img {
+    width: 90%;
 }
 
 #tecnologia {
-    height: 100vh;
-
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #contacto {
-    height: 100vh;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #252934;
+}
+
+.section-bar {
+    margin: 1rem 0 1rem 0;
+    width: 5rem;
+    height: 4px;
+    background: #252934;
+}
+
+#contacto > h2 {
+    padding: 2rem 0 0 0.2rem;
+    font-weight: 350;
+    color: ivory;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#contacto > .section-bar {
+    margin: 1rem 0 3rem 0;
+    width: 5rem;
+    height: 4px;
+    background: ivory;
 }

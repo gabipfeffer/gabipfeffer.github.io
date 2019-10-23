@@ -1,5 +1,6 @@
 const menuBtn = document.querySelector('.nav_btn');
 const menu = document.querySelector('nav');
+const linkMenu = document.querySelectorAll('a');
 const topOfMenu = menu.offsetTop;
 
 function trancarNav() {
@@ -12,14 +13,9 @@ function trancarNav() {
     }
 };
 
-
-
-
-
-
-
-menuBtn.addEventListener('click', function(){
+menuBtn.addEventListener('click', function() {
     menu.classList.toggle('visible');
 });
+
 
 window.addEventListener('scroll', trancarNav);
