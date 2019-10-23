@@ -12,7 +12,7 @@
         <h2>Hola, soy Gabriel Pfeffer Lopez.
             <br>Full Stack Developer.
         </h2>
-        <button class="about"><a href="#sobremi">Conozcame -></a></button>
+        <button class="about"><a href="#sobremi">Conozcame</a></button>
     </header>
     <nav class="navbar">
         <span class="nav_btn">|||</span>
@@ -41,33 +41,43 @@
     <section id="educacion">
         <h2>Educacion</h2>
         <div class="section-bar"></div>
-        <table class="table_educacion">
-                <tr>
-                    <td><img src="./src/uh-logo.jpeg" alt="UpgradeHub"></td>
-                    <td>Full Stack Developer Bootcamp</td>
-                </tr>
-                <tr>
-                    <td><img src="./src/lse-logo.jpg" alt="LSE"></td>
-                    <td>
-                            London School of Economics Online MBA Essentials
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="./src/usf-logo.jpg" alt="USF"></td>
-                    <td>
-                        MUMA Facultad de Administración de Negocios - 
-                        Licenciatura en Finanzas (BS)
-                    </td>
-                </tr>
-        </table>
+        <div class="upgradeHub">
+            <img src="./src/uh-logo.jpeg" alt="UpgradeHub">
+            <h3>Full Stack Developer Bootcamp</h3>
+        </div>
+        <div class="lse">
+            <img src="./src/lse-logo.jpg" alt="LSE">
+            <h3>School of Economics Online MBA Essentials</h3> 
+        </div>
+        <div class="usf">
+            <img src="./src/usf-logo.jpg" alt="USF">
+            <h3>MUMA Facultad de Administración de Negocios - Licenciatura en Finanzas (BS)</h3>
+        </div>
     </section>
+
     <section id="tecnologia">
         <h2>Tecnologia</h2>
         <div class="section-bar"></div>
+        <div class="row1">
+
+        </div>
+        <div class="row2">
+            
+        </div>
+        <div class="row3">
+            
+        </div>
     </section>
+
     <section id="contacto">
         <h2>Contacto</h2>
         <div class="section-bar"></div>
+        <form class="contacto">
+            <input type="text" name="name" placeholder="Nombre">
+            <input type="email" name="email" placeholder="Correo">
+            <textarea name="message" placeholder="Su mensaje"></textarea>
+            <input class="submit_btn" type="submit" value="Enviar">
+        </form>
     </section>
     <script src="/src/script.js"></script>
 </body>

@@ -17,5 +17,4 @@ menuBtn.addEventListener('click', function() {
     menu.classList.toggle('visible');
 });
 
-
 window.addEventListener('scroll', trancarNav);

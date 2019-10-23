@@ -97,7 +97,7 @@ button.about {
 .sobremi_figure {
     border-radius: 50%;
     overflow: hidden;
-    width: 80%;
+    width: 60%;
 }
 
 .sobremi_figure > img {
@@ -127,20 +127,44 @@ section > h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2rem 0;
 }
 
-.table_educacion {
-    margin: 1rem 0 5rem 0;
-    width: 90%;
+
+.upgradeHub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1rem;
 }
 
-.table_educacion td {
-    padding: 1rem 0;
+.upgradeHub img {
     width: 40%;
+    padding: 1rem 1rem;
 }
 
-.table_educacion img {
-    width: 70%;
+.lse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.lse img {
+    width: 40%;
+    padding: 1rem 1rem;
+}
+
+.usf {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.usf img {
+    width: 40%;
+    padding: 1rem 1rem;
 }
 
 #tecnologia {
@@ -178,4 +202,33 @@ section > h2 {
     width: 5rem;
     height: 4px;
     background: ivory;
+}
+
+#contacto > .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.contacto > input {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    width: 90%;
+}
+
+.contacto > textarea {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    width: 90%;
+    height: 30vh;
+}
+
+.contacto > .submit_btn {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    width: 40%;
+    color: ivory;
+    background-color: #252934;
+    border: 2px solid ivory;
 }
