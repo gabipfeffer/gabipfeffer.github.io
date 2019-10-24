@@ -88,6 +88,7 @@ button.about {
 }
 
 #sobremi {
+    width: 100%;
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -123,6 +124,7 @@ section > h2 {
 }
 
 #educacion {
+    width: 100%;
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -130,11 +132,20 @@ section > h2 {
     margin: 2rem 0;
 }
 
+.instituciones {
+    width: 95%;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .upgradeHub {
     display: flex;
     flex-direction: row;
     align-items: center;
+
     padding: 1rem 1rem;
 }
 
@@ -148,6 +159,7 @@ section > h2 {
     flex-direction: row;
     align-items: center;
     padding: 1rem 1rem;
+
 }
 
 .lse img {
@@ -160,6 +172,7 @@ section > h2 {
     flex-direction: row;
     align-items: center;
     padding: 1rem 1rem;
+
 }
 
 .usf img {
@@ -168,6 +181,7 @@ section > h2 {
 }
 
 #tecnologia {
+    width: 100%;
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -175,6 +189,7 @@ section > h2 {
 }
 
 #contacto {
+    width: 100%;
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -215,6 +230,8 @@ section > h2 {
     padding: 0.5rem 0;
     margin: 0.5rem 0;
     width: 90%;
+    background-color: #1E242C;
+    border: 1px solid ivory;
 }
 
 .contacto > textarea {
@@ -222,6 +239,8 @@ section > h2 {
     margin: 0.5rem 0;
     width: 90%;
     height: 30vh;
+    background-color: #1E242C;
+    border: 1px solid ivory;
 }
 
 .contacto > .submit_btn {
@@ -232,3 +251,56 @@ section > h2 {
     background-color: #252934;
     border: 2px solid ivory;
 }
+
+.progress_bars {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.html, .css, .javascript, 
+.nodejs, .react, .php {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+progress {
+    margin: 1rem 1rem;
+    width: 80%;
+    background-color: #fff;
+    height: 3rem;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  progress::-webkit-progress-value {
+    background: #252934;
+  }
+  
+  progress::-moz-progress-bar {
+    background: grey;
+  }
+  
+  progress::-webkit-progress-value {
+    background: #252934;
+  }
+
+  label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 7rem;
+      height: 3rem;
+      background-color: #252934;
+      color: ivory;
+      text-align: center;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
