@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 header {
@@ -80,13 +81,12 @@ header a {
     box-shadow: 0 5px rgba(0, 0, 0, 0.1);
 }
 
-
-
 section {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 }
 
 section h2 {
@@ -109,6 +109,13 @@ section .section-bar {
     width: 60%;
 }
 
+.sobremi--contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
 #sobremi figure img {
     width: 100%;
     height: auto;
@@ -123,14 +130,22 @@ section .section-bar {
     line-height: 1.2rem;
 }
 
+.intituciones {
+    width: 100%;
+}
+
 .instituciones img {
-    width: 40%;
-    padding: 1rem 1rem;
+    width: 90%;
+}
+
+.instituciones h3 {
+    margin: 1rem;
+    text-align: center;
 }
 
 .institucion {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 1rem 1rem;
 }
@@ -148,7 +163,7 @@ section .section-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .pbars label {
@@ -176,6 +191,7 @@ section .section-bar {
 
 #contacto {
     width: 100%;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,6 +201,7 @@ section .section-bar {
 #contacto h2 {
     color: ivory;
 }
+
 
 #contacto .section-bar {
     margin: 1rem 0 1rem 0;
@@ -235,19 +252,88 @@ textarea::placeholder {
 
 .proyectos {
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .proyectos--tec {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 30%;
+    justify-content: center;
+    margin: 0;
 }
 
+.proyectos--tec img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.proyectos--tec h3 {
+    padding: 0.5rem;
+    font-weight: 350;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 800px) {
+    
+    .sobremi--contenido {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+    }
+    
+    #sobremi figure {
+        width: 30%;
+    }
+
+    #sobremi p {
+        text-align: left;
+        padding: 0 2rem;
+    }
+
+    .institucion {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .institucion img {
+        width: 45%;
+        margin: 0;
+    }
+
+    .institucion h3 {
+        width: 45%;
+        margin: 0 1rem;
+        text-align: left;
+    }
+
+    .proyectos--tec {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .proyectos--tec a{
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+} 
 
 
