@@ -1,6 +1,6 @@
+
 @import 'reset.css';
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
-
 
 * {
     margin: 0;
@@ -8,6 +8,33 @@
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-color: #252934;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h2 {
+    color: ivory;
+    padding: 1rem 0.5rem;
+    font-weight: 350;
+}
+
+header a {
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    border: 3px solid ivory;
+    border-radius: 5%;
+    background-color: #252934;
+    color: ivory;
+    cursor: pointer;
 }
 
 .navbar {
@@ -23,14 +50,11 @@
     transition: height 1s ease;
 }
 
-.visible {
-    height: 11.3rem;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+.nav-visible {
+    height: 13.5rem;
 }
 
-.navbar > span {
+.navbar span {
     text-align: right;
     font-size: 2rem;
     color: ivory;
@@ -51,55 +75,46 @@
     color: red;
 }
 
-header {
-    height: 100vh;
-    width: 100%;
-    background-color: #252934;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-header > h2 {
-    color: ivory;
-    padding: 1rem 0.5rem;
-    font-weight: 350;
-}
-
-button.about {
-    margin: 1rem 0;
-    padding: 1rem 1rem;
-    border: 3px solid ivory;
-    border-radius: 5%;
-    background-color: #252934;
-    color: ivory;
-    cursor: pointer;
-}
-
-.about > a {
-    color: ivory;
-}
-
 .fixed-nav {
     position: fixed;
     box-shadow: 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.sobremi_figure {
+
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    padding: 2rem 0 0 0.2rem;
+    font-weight: 350;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+section .section-bar {
+    margin: 1rem 0 1rem 0;
+    width: 6rem;
+    height: 4px;
+    background: #252934;
+}
+
+#sobremi figure {
     border-radius: 50%;
     overflow: hidden;
     width: 60%;
 }
 
-.sobremi_figure > img {
+#sobremi figure img {
     width: 100%;
     height: auto;
-    
 }
 
-.sobremi_desc {
+#sobremi p {
     padding: 0.5rem 0 0 0;
     width: 90%;
     text-align: center;
@@ -108,123 +123,16 @@ button.about {
     line-height: 1.2rem;
 }
 
-section > h2 {
-    padding: 2rem 0 0 0.2rem;
-    font-weight: 350;
-    text-transform: uppercase;
-    font-size: 2rem;
-}
-
-.instituciones {
-    width: 95%;
-    margin: 0 auto;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.upgradeHub {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    padding: 1rem 1rem;
-}
-
-.upgradeHub img {
+.instituciones img {
     width: 40%;
     padding: 1rem 1rem;
 }
 
-.lse {
+.institucion {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1rem 1rem;
-
-}
-
-.lse img {
-    width: 40%;
-    padding: 1rem 1rem;
-}
-
-.usf {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1rem 1rem;
-
-}
-
-.usf img {
-    width: 40%;
-    padding: 1rem 1rem;
-}
-
-#contacto {
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #252934;
-}
-
-.section-bar {
-    margin: 1rem 0 1rem 0;
-    width: 5rem;
-    height: 4px;
-    background: #252934;
-}
-
-#contacto > h2 {
-    padding: 2rem 0 0 0.2rem;
-    font-weight: 350;
-    color: ivory;
-    text-transform: uppercase;
-    font-size: 2rem;
-}
-
-#contacto > .section-bar {
-    margin: 1rem 0 3rem 0;
-    width: 5rem;
-    height: 4px;
-    background: ivory;
-}
-
-#contacto > .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-}
-
-.contacto > input {
-    padding: 0.5rem 0;
-    margin: 0.5rem 0;
-    width: 90%;
-    background-color: #1E242C;
-    border: 1px solid ivory;
-}
-
-.contacto > textarea {
-    padding: 0.5rem 0;
-    margin: 0.5rem 0;
-    width: 90%;
-    height: 30vh;
-    background-color: #1E242C;
-    border: 1px solid ivory;
-}
-
-.contacto > .submit_btn {
-    padding: 0.5rem 0;
-    margin: 0.5rem 0;
-    width: 40%;
-    color: ivory;
-    background-color: #252934;
-    border: 2px solid ivory;
 }
 
 .progress_bars {
@@ -235,8 +143,7 @@ section > h2 {
     justify-content: center;
 }
 
-.html, .css, .javascript, 
-.nodejs, .react, .php {
+.pbars {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -244,51 +151,103 @@ section > h2 {
     justify-content: space-between;
 }
 
-progress {
+.pbars label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 3rem;
+    background-color: #252934;
+    color: ivory;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.pbars progress {
     margin: 1rem 1rem;
-    width: 80%;
+    width: 70%;
     background-color: #fff;
     height: 3rem;
 }
 
-progress[value] {
-    -webkit-appearance: none;
-    appearance: none;
-  }
-
-  progress::-webkit-progress-value {
-    background: #252934;
-  }
-  
-  progress::-moz-progress-bar {
-    background: grey;
-  }
-  
-  progress::-webkit-progress-value {
+.progress_bars progress::-webkit-progress-value {
     background: #252934;
   }
 
-  label {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 7rem;
-      height: 3rem;
-      background-color: #252934;
-      color: ivory;
-      text-align: center;
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-
-#proyectos a:hover {
-    transform: scale(1.3);
-    color: #252934;
-}
-
-section {
+#contacto {
     width: 100%;
-    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #252934;
 }
+
+#contacto h2 {
+    color: ivory;
+}
+
+#contacto .section-bar {
+    margin: 1rem 0 1rem 0;
+    width: 6rem;
+    height: 4px;
+    background: ivory;
+}
+
+#contacto .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+#contacto input {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    width: 90%;
+    background-color: #1E242C;
+    border: 1px solid ivory;
+    color: ivory;
+}
+
+#contacto textarea {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    width: 90%;
+    height: 30vh;
+    background-color: #1E242C;
+    border: 1px solid ivory;
+    color: ivory;
+}
+
+input::placeholder,
+textarea::placeholder {
+    padding: 0 1rem;
+}
+
+#contacto button {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    width: 40%;
+    color: ivory;
+    background-color: #252934;
+    border: 2px solid ivory;
+}
+
+.proyectos {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyectos--tec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+
+

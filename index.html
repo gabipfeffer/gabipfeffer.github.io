@@ -12,22 +12,23 @@
         <h2>Hola, soy Gabriel Pfeffer Lopez.
             <br>Full Stack Developer.
         </h2>
-        <button class="about"><a href="#sobremi">↓↓↓</a></button>
+        <a href="#sobremi">↓↓↓</a>
     </header>
     <nav class="navbar">
         <span class="nav_btn">|||</span>
         <a href="#sobremi">Sobre mi</a>
         <a href="#educacion">Educacion</a>
         <a href="#tecnologia">Tecnologia</a>
+        <a href="#portafolio">Portafolio</a>
         <a href="#contacto">Contacto</a>
     </nav>
     <section id="sobremi">
         <h2>Sobre Mi</h2>
         <div class="section-bar"></div>
-        <figure class="sobremi_figure">
+        <figure>
             <img src="./src/IMG_4738.jpg" alt="">
         </figure>
-        <p class="sobremi_desc">
+        <p>
             El fútbol me enseñó a prosperar en entornos de ritmo acelerado. 
             El desarrollo web me enseñó a adaptarme rápidamente a las circunstancias cambiantes. 
             El fútbol me enseñó el significado del verdadero compromiso. 
@@ -42,15 +43,15 @@
         <h2>Educacion</h2>
         <div class="section-bar"></div>
         <div class="instituciones">
-            <div class="upgradeHub">
+            <div class="institucion">
                 <img src="./src/uh-logo.jpeg" alt="UpgradeHub">
                 <h3>Full Stack Developer Bootcamp</h3>
             </div>
-            <div class="lse">
+            <div class="institucion">
                 <img src="./src/lse-logo.jpg" alt="LSE">
                 <h3>School of Economics Online MBA Essentials</h3> 
             </div>
-            <div class="usf">
+            <div class="institucion">
                 <img src="./src/usf-logo.jpg" alt="USF">
                 <h3>MUMA Facultad de Administración de Negocios - Licenciatura en Finanzas (BS)</h3>
             </div>
@@ -61,35 +62,51 @@
         <h2>Tecnologia</h2>
         <div class="section-bar"></div>
         <div class="progress_bars">
-            <div class="html">
+            <div class="pbars">
                 <label for="progress_html">HTML5</label>
                 <progress max="100" value="70" id="progress_html"></progress>
             </div>
-            <div class="css">
+            <div class="pbars">
                 <label for="progress_css">CSS3</label>
                 <progress max="100" value="60" id="progress_css"></progress>
             </div>
-            <div class="javascript">
+            <div class="pbars">
                     <label for="progress_javascript">JavaScript</label>
                     <progress max="100" value="55" id="progress_javascript"></progress>
             </div>
-            <div class="nodejs">
+            <div class="pbars">
                     <label for="progress_nodejs">Node.js</label>
                     <progress max="100" value="55" id="progress_nodejs"></progress>
             </div>
-            <div class="react">
+            <div class="pbars">
                     <label for="progress_react">React</label>
                     <progress max="100" value="60" id="progress_react"></progress>
             </div>
-            <div class="php">
+            <div class="pbars">
                     <label for="progress_php">PHP</label>
                     <progress max="100" value="30" id="progress_php"></progress>
             </div>
         </div>
     </section>
-    <section id="proyectos">
-        <a href="http://facerecognition-gabipfeffer.herokuapp.com/">API de Reconociemiento Facial - React</a>
+
+
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="section-bar"></div>
+        <div class="proyectos">
+            <div class="proyectos--tec">
+                <h3>REACT</h3>
+            </div>
+            <div class="proyectos--tec">
+                <h3>HTML</h3>
+            </div>
+            <div class="proyectos--tec">
+                <h3>PHP</h3>
+            </div>
+        </div>
     </section>
+
+
     <section id="contacto">
         <h2>Contacto</h2>
         <div class="section-bar"></div>
@@ -97,9 +114,9 @@
             <input type="text" name="name" placeholder="Nombre">
             <input type="email" name="email" placeholder="Correo">
             <textarea name="message" placeholder="Su mensaje"></textarea>
-            <input class="submit_btn" type="submit" value="Enviar">
+            <button type="submit">Enviar</button>
         </form>
     </section>
-    <script src="/src/script.js"></script>
+    <script src="./src/script.js"></script>
 </body>
 </html>
